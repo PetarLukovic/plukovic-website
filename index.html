@@ -116,11 +116,12 @@
         </article>
 
         <article class="project">
-          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="media"><img src="assets/projects/one-to-many.png" alt="Diagram: a keypoint in the query image is matched at once to the keypoints in images 1 to N that observe the same 3D point" loading="lazy" width="1400" height="1175"></div>
           <div class="details">
             <p class="meta">Mar 2024 — Aug 2024 · Semester Project · ETH Zürich</p>
             <h3>Multiple to One Matching</h3>
-            <p>Matching multiple database images to a single query image for camera localization and 3D reconstruction, built on HLoc.</p>
+            <p>When a scene has already been reconstructed with Structure from Motion, matching a new query image against every database image one pair at a time wastes work. This project matches the query against many images at once.</p>
+            <p>Keypoints from the database images are grouped by the 3D point they observe and aggregated, then matched in a single pass by a network built on LightGlue. This makes matching faster and more accurate for localization and for extending reconstructions, and the method is integrated into the HLoc pipeline.</p>
           </div>
         </article>
 
