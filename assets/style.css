@@ -187,7 +187,28 @@ section h2 { font-size: 1.9rem; margin-bottom: 2rem; }
   border-radius: 6px;
   padding: 0.2rem 0.6rem;
 }
-.links { display: flex; gap: 1.25rem; font-weight: 500; }
+.links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.25rem 0 0; }
+.links a, .links .soon {
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  background: var(--surface);
+}
+.links a:hover { text-decoration: none; border-color: var(--accent); }
+.links .soon { color: var(--muted); border-style: dashed; background: transparent; }
+
+.abstract { margin: 0 0 1rem; }
+.abstract summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+  width: fit-content;
+}
+.abstract summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.abstract p { color: var(--muted); font-size: 0.95rem; margin: 0.75rem 0 0; }
 
 /* Timelines */
 .timeline { list-style: none; padding: 0; margin: 0; }

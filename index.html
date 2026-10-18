@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=5">
+  <link rel="stylesheet" href="assets/style.css?v=6">
 </head>
 <body>
   <header class="nav">
@@ -59,13 +59,19 @@
       -->
       <div class="projects">
         <article class="project">
-          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="media"><img src="assets/projects/polygraph.jpg" alt="Multi-session trajectories from Polygraph aligned in one frame over a 3D reconstruction of an industrial hall" loading="lazy" width="1600" height="941"></div>
           <div class="details">
             <p class="meta">Mar 2026 — Sept 2026 · Master Thesis · ETH Zürich</p>
             <h3>Polygraph: Large-Scale Multi-Session Trajectory Optimization Using Pose Graphs</h3>
-            <p>Mapless, large-scale multi-session trajectory optimization using pose graphs and learned metric depth estimation.</p>
+            <p>Robots, vehicles and wearables traverse the same places again and again, each time producing a trajectory that drifts and lives in its own frame. Polygraph fuses them into one globally consistent set, online and without ever building a 3D map.</p>
             <p class="badge">Under submission · ICRA 2027</p>
-            <!-- <p class="links"><a href="#">Paper</a><a href="#">Code</a></p> -->
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p>Robots, vehicles, and wearable devices often traverse the same environment many times. Each pass produces its own trajectory from onboard visual or visual-inertial odometry. These trajectories are locally accurate but drift over time and live in unrelated coordinate frames. Turning many such independent trajectories into one globally consistent set is the large-scale multi-session trajectory optimization problem. Existing solutions largely work offline. All sessions must be available up front, one session is fixed as the reference frame, and a single fused map is then optimized.</p>
+              <p>This paper presents Polygraph, a multi-session trajectory optimization pipeline that processes sessions online, one keyframe and one spatial cluster at a time, and never builds a 3D map. Keyframes are grouped into local clusters. When a cluster closes, it is matched against every other session through learned image retrieval. Candidate pairs are verified with sparse feature matching, monocular metric depth, and robust pose estimation. A two-tier consensus gate admits a cross-session edge into the shared pose graph only once independent evidence corroborates it. A cheap incremental solve keeps the graph current, and a periodic robust batch solve prunes outliers.</p>
+              <p>We evaluate Polygraph on stereo outdoor driving, HoloLens and iPad indoor traversals, legged indoor locomotion with a Boston Dynamics Spot, and large-scale outdoor vehicle and handheld routes. Against the closest prior work on the same GPU model, using its reported timings, Polygraph runs faster, commits fewer loop-closure edges, and matches or improves on accuracy.</p>
+            </details>
+            <p class="links"><span class="soon">Website · coming soon</span></p>
           </div>
         </article>
 
