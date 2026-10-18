@@ -126,11 +126,13 @@
         </article>
 
         <article class="project">
-          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="media"><img src="assets/projects/stereo.png" alt="Simple stereo geometry: left and right cameras separated by baseline b, both with focal length f, observing point P at image positions u_L and u_R" loading="lazy" width="664" height="454"></div>
           <div class="details">
             <p class="meta">Mar 2023 — Jul 2023 · Bachelor Thesis · University of Belgrade</p>
             <h3>Stereo Vision Depth Estimation</h3>
-            <p>Theoretical foundations of stereo depth estimation, with a practical implementation on an NVIDIA Jetson Nano.</p>
+            <p>A camera flattens the 3D world into a 2D image and loses depth along the way. This thesis rebuilds stereo depth estimation from first principles: the linear camera model, intrinsic and extrinsic parameters, lens distortion and calibration, then depth from calibrated stereo and from uncalibrated stereo through the fundamental matrix, correspondence search and rectification.</p>
+            <p>The second half puts the theory to work in a real-time depth pipeline on an NVIDIA Jetson Nano with a Sony IMX219 stereo camera (60 mm baseline). Built with OpenCV, it calibrates and rectifies the cameras, computes and filters disparity maps, and converts them to depth. CUDA acceleration makes live video processing possible on a 5 W embedded board.</p>
+            <p class="links"><a href="assets/Petar_Lukovic_Bachelor_Thesis.pdf" target="_blank" rel="noopener">Thesis (PDF)</a></p>
           </div>
         </article>
       </div>
