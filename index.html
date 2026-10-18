@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Petar Lukovic</title>
-  <meta name="description" content="Petar Lukovic — software engineer. Projects, experience and contact.">
+  <meta name="description" content="Petar Lukovic — MSc Electrical Engineering student at ETH Zürich working on Computer Vision, 3D Vision and Robotics.">
   <link rel="canonical" href="https://plukovic.com/">
   <meta property="og:title" content="Petar Lukovic">
-  <meta property="og:description" content="Software engineer. Projects, experience and contact.">
+  <meta property="og:description" content="MSc student at ETH Zürich · Computer Vision, 3D Vision and Robotics.">
   <meta property="og:url" content="https://plukovic.com/">
-  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://plukovic.com/assets/profile.jpg">
+  <meta property="og:type" content="profile">
   <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -22,72 +23,111 @@
   <header class="nav">
     <a class="logo" href="#top" aria-label="Home">PL</a>
     <nav>
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a class="nav-optional" href="#education">Education</a>
       <a href="#contact">Contact</a>
+      <a class="nav-cv" href="assets/Petar_Lukovic_CV.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Petar Lukovic</h1>
-      <p class="lede">
-        <!-- TODO: your one-line pitch -->
-        Software engineer building reliable, thoughtful software.
-        I like clean systems, good tooling and shipping things people use.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#contact">Get in touch</a>
-        <a class="btn" href="https://github.com/PetarLukovic" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <div class="about">
-        <div>
-          <!-- TODO: replace with your story -->
-          <p>
-            I'm a software engineer based in <strong>[City, Country]</strong>. I work on
-            <strong>[area — e.g. backend systems, embedded, ML]</strong> and care about
-            writing code that is easy to understand and hard to break.
-          </p>
-          <p>
-            Outside of work I enjoy <strong>[hobbies]</strong>. I'm currently interested in
-            <strong>[what you're learning or exploring]</strong>.
-          </p>
-        </div>
-        <ul class="skills" aria-label="Skills">
-          <!-- TODO: your stack -->
-          <li>Python</li><li>C++</li><li>TypeScript</li><li>Linux</li>
-          <li>Docker</li><li>PostgreSQL</li><li>Git</li><li>AWS</li>
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Petar Lukovic" width="640" height="640">
+      <div>
+        <p class="eyebrow">MSc Electrical Engineering · ETH Zürich</p>
+        <h1>Petar Lukovic</h1>
+        <p class="lede">
+          I work on Computer Vision, 3D Vision and Robotics: large-scale localization and mapping,
+          3D scene understanding, and mixed reality interfaces for robots. Research Assistant at the
+          Computer Vision and Geometry Lab, ETH Zürich.
+        </p>
+        <ul class="chips" aria-label="Research interests">
+          <li>Computer Vision</li><li>3D Vision</li><li>Robotics</li><li>Mixed Reality</li>
         </ul>
+        <div class="cta">
+          <a class="btn primary" href="assets/Petar_Lukovic_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/petar-lukovic-57b17b335" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/PetarLukovic" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="grid">
-        <!-- TODO: replace with real projects; copy a <article> block to add more -->
-        <article class="card">
-          <h3>Project One</h3>
-          <p>Short description of what it does and why it's interesting.</p>
-          <p class="tags">Python · FastAPI · Postgres</p>
-          <a href="https://github.com/PetarLukovic" target="_blank" rel="noopener">View code →</a>
+      <!--
+        Each project has a .media box on one side and details on the other; sides alternate automatically.
+        To replace a placeholder, swap the <div class="placeholder">…</div> for one of:
+          <img src="assets/projects/polygraph.jpg" alt="Polygraph trajectory visualization">
+          <video src="assets/projects/polygraph.mp4" autoplay muted loop playsinline></video>
+        and put the file in assets/projects/. Best size: 16:10, ~1600×1000.
+      -->
+      <div class="projects">
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Mar 2026 — Sept 2026 · Master Thesis · ETH Zürich</p>
+            <h3>Polygraph: Large-Scale Multi-Session Trajectory Optimization Using Pose Graphs</h3>
+            <p>Mapless, large-scale multi-session trajectory optimization using pose graphs and learned metric depth estimation.</p>
+            <p class="badge">Under submission · ICRA 2027</p>
+            <!-- <p class="links"><a href="#">Paper</a><a href="#">Code</a></p> -->
+          </div>
         </article>
-        <article class="card">
-          <h3>Project Two</h3>
-          <p>Short description of what it does and why it's interesting.</p>
-          <p class="tags">TypeScript · React</p>
-          <a href="https://github.com/PetarLukovic" target="_blank" rel="noopener">View code →</a>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Mar 2025 — Present · ETH Zürich</p>
+            <h3>CroCoDL: Cross-device Collaborative Dataset for Localization</h3>
+            <p>Data processing and maintenance for a cross-device localization dataset, and co-organisation of its challenge.</p>
+            <p class="badge">Challenge organiser · ICCV 2025</p>
+          </div>
         </article>
-        <article class="card">
-          <h3>This Website</h3>
-          <p>Hand-written HTML and CSS, hosted on GitHub Pages with a custom domain.</p>
-          <p class="tags">HTML · CSS · GitHub Pages</p>
-          <a href="https://github.com/PetarLukovic/plukovic-website" target="_blank" rel="noopener">View code →</a>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Aug 2025 — Dec 2025 · Semester Project · ETH Zürich</p>
+            <h3>Interactive 3D Segmentation</h3>
+            <p>Interactive segmentation of 3D scenes using Segment Anything.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Oct 2024 — Mar 2025 · ETH Zürich</p>
+            <h3>Spot-On: A Mixed Reality Interface for Multi-Robot Cooperation</h3>
+            <p>An intuitive mixed reality interface for collaboration between humans and multiple robots.</p>
+            <p class="badge">Submitted · CV4MR Workshop, CVPR 2025</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Sept 2024 — Mar 2025 · ETH Zürich</p>
+            <h3>HoloSpot: Intuitive Object Manipulation via Mixed Reality Drag-and-Drop</h3>
+            <p>Integrating a Boston Dynamics Spot robot with Microsoft HoloLens 2 for drag-and-drop object manipulation, using OpenMask3D and AnyGrasp.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Mar 2024 — Aug 2024 · Semester Project · ETH Zürich</p>
+            <h3>Multiple to One Matching</h3>
+            <p>Matching multiple database images to a single query image for camera localization and 3D reconstruction, built on HLoc.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media"><div class="placeholder"><span>Visualizer coming soon</span></div></div>
+          <div class="details">
+            <p class="meta">Mar 2023 — Jul 2023 · Bachelor Thesis · University of Belgrade</p>
+            <h3>Stereo Vision Depth Estimation</h3>
+            <p>Theoretical foundations of stereo depth estimation, with a practical implementation on an NVIDIA Jetson Nano.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -95,45 +135,83 @@
     <section id="experience">
       <h2>Experience</h2>
       <ol class="timeline">
-        <!-- TODO: your roles, newest first -->
         <li>
-          <span class="when">2024 — Present</span>
+          <span class="when">Mar 2025 — Present</span>
           <div>
-            <h3>Software Engineer · Company</h3>
-            <p>What you work on and one result you're proud of.</p>
+            <h3>Research Assistant · ETH Zürich</h3>
+            <p>Computer Vision and Geometry Lab.</p>
           </div>
         </li>
         <li>
-          <span class="when">2022 — 2024</span>
+          <span class="when">Sept 2025 — Feb 2026</span>
           <div>
-            <h3>Junior Engineer · Company</h3>
-            <p>What you worked on and what you learned.</p>
+            <h3>Teaching Assistant · ETH Zürich</h3>
+            <p>Mixed Reality (HS25), Computer Vision and Geometry Lab.</p>
           </div>
         </li>
         <li>
-          <span class="when">2018 — 2022</span>
+          <span class="when">Sept 2024 — Feb 2026</span>
           <div>
-            <h3>B.Sc. Computer Science · University</h3>
-            <p>Focus, thesis or notable coursework.</p>
+            <h3>Teaching Assistant · ETH Zürich</h3>
+            <p>Computer Vision (HS24), Computer Vision and Geometry Lab.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Oct 2022 — Jun 2023</span>
+          <div>
+            <h3>Teaching Assistant · School of Electrical Engineering, Belgrade</h3>
+            <p>Object-oriented Programming (HS20) and Microcontroller Systems (HS22).</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Oct 2021 — May 2023</span>
+          <div>
+            <h3>Team Member · Formula Student Team Road Arrow</h3>
+            <p>Vehicle dynamics and powertrain.</p>
           </div>
         </li>
       </ol>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sept 2023 — Present</span>
+          <div>
+            <h3>MSc Electrical Engineering · ETH Zürich</h3>
+            <p>Specialization in Signal Processing and Machine Learning.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Oct 2019 — Jul 2023</span>
+          <div>
+            <h3>BSc Electrical Engineering · University of Belgrade</h3>
+            <p>School of Electrical Engineering, Department of Signals and Systems.</p>
+          </div>
+        </li>
+      </ol>
+      <h3 class="subhead">Skills</h3>
+      <ul class="chips">
+        <li>Python</li><li>C / C++</li><li>Embedded C</li><li>Java</li><li>Linux</li><li>Windows</li>
+      </ul>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
-      <p class="lede">Open to interesting projects and conversations. The fastest way to reach me is email.</p>
+      <p class="lede">Always happy to talk about research, projects and opportunities in Computer Vision and Robotics.</p>
       <ul class="links">
-        <li><a href="mailto:petar.lukovic032@gmail.com">petar.lukovic032@gmail.com</a></li>
-        <li><a href="https://github.com/PetarLukovic" target="_blank" rel="noopener">github.com/PetarLukovic</a></li>
-        <!-- TODO: your LinkedIn URL -->
-        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><span>ETH</span><a href="mailto:plukovic@ethz.ch">plukovic@ethz.ch</a></li>
+        <li><span>Email</span><a href="mailto:petar.lukovic032@gmail.com">petar.lukovic032@gmail.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/petar-lukovic-57b17b335" target="_blank" rel="noopener">petar-lukovic</a></li>
+        <li><span>GitHub</span><a href="https://github.com/PetarLukovic" target="_blank" rel="noopener">PetarLukovic</a></li>
+        <li><span>CV</span><a href="assets/Petar_Lukovic_CV.pdf" target="_blank" rel="noopener">Petar_Lukovic_CV.pdf</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> Petar Lukovic</p>
+    <p>© <span id="year">2026</span> Petar Lukovic · Zürich, Switzerland</p>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
