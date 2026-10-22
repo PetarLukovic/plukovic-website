@@ -35,10 +35,10 @@
     <a class="logo" href="#top" aria-label="Home">PL</a>
     <nav>
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
       <a class="nav-optional" href="#education">Education</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
-      <a class="nav-cv" href="assets/Petar_Lukovic_CV.pdf?v=3" data-goatcounter-click="cv-download" target="_blank" rel="noopener">CV</a>
+      <a class="nav-cv" href="assets/Petar_Lukovic_CV.pdf?v=4" data-goatcounter-click="cv-download" target="_blank" rel="noopener">CV</a>
     </nav>
   </header>
 
@@ -72,7 +72,7 @@
         <article class="project">
           <div class="media"><img src="assets/projects/polygraph.jpg" alt="Multi-session trajectories from Polygraph aligned in one frame over a 3D reconstruction of an industrial hall" loading="lazy" width="1600" height="941"></div>
           <div class="details">
-            <p class="meta">Mar 2026 — Sept 2026 · Master Thesis · ETH Zürich</p>
+            <p class="meta">Mar 2026 — Sept 2026 · Master Thesis · Prof. Dr. Marc Pollefeys · CVG, ETH Zürich</p>
             <h3>Polygraph: Large-Scale Multi-Session Trajectory Optimization Using Pose Graphs</h3>
             <p>Robots, vehicles and AR devices revisit the same places many times, and every visit yields a trajectory that drifts and lives in its own coordinate frame. Polygraph merges them into one globally consistent set online, one keyframe cluster at a time, without ever building a 3D map.</p>
             <p>Loop-closure candidates come from learned image retrieval, are verified with sparse feature matching and monocular metric depth, and only enter the shared pose graph once independent evidence agrees. Evaluated on cars, HoloLens, iPad, Boston Dynamics Spot and handheld routes, it runs faster than the closest prior work while matching or improving its accuracy.</p>
@@ -84,7 +84,7 @@
         <article class="project">
           <div class="media"><img src="assets/projects/crocodl.jpg" alt="CroCoDL teaser: seven capture locations, mesh-to-device alignment, co-localized trajectories, and the capture devices Spot, HoloLens, iOS, NavVis and a DJI drone" loading="lazy" width="1400" height="1233"></div>
           <div class="details">
-            <p class="meta">Mar 2025 — Present · ETH Zürich</p>
+            <p class="meta">Mar 2025 — Present · CVG, ETH Zürich</p>
             <h3>CroCoDL: Cross-device Collaborative Dataset for Localization</h3>
             <p>A large-scale benchmark for visual localization across very different devices. Seven new indoor and outdoor locations are captured with a Boston Dynamics Spot, HoloLens 2, iPhones and iPads, NavVis scanners and a DJI drone, with every device aligned to dense reference meshes so trajectories can be co-localized in one frame.</p>
             <p>I work on processing and maintaining the data, and co-organised the CroCoDL localization challenge at the ICCV 2025 workshop.</p>
@@ -94,23 +94,13 @@
         </article>
 
         <article class="project">
-          <div class="media"><img src="assets/projects/interactive-seg.jpg" alt="A street scene with a sign pole selected, and below it the pole segmented out with foreground points sampled along it" loading="lazy" width="1200" height="1613"></div>
-          <div class="details">
-            <p class="meta">Aug 2025 — Dec 2025 · Semester Project · ETH Zürich</p>
-            <h3>Interactive 3D Segmentation</h3>
-            <p>Training interactive segmentation models needs accurate ground-truth 3D object masks, but annotating them usually means rounds of positive and negative clicks to fix every boundary, which is slow and tedious.</p>
-            <p>This project removes the back-and-forth: from a single initial click, it produces a high-quality 3D segmentation of the object, building on Segment Anything. Annotation effort drops sharply while segmentation accuracy is preserved.</p>
-          </div>
-        </article>
-
-        <article class="project">
           <div class="media bare"><img src="assets/projects/spot-on.webp" alt="Spot-On teaser: the Spot-On logo, HoloLens menus for a drawer with Open, Close and Search options, and a Spot robot carrying out the task" loading="lazy" width="1400" height="1316"></div>
           <div class="details">
-            <p class="meta">Oct 2024 — Mar 2025 · ETH Zürich</p>
+            <p class="meta">Oct 2024 — Mar 2025 · CVG, ETH Zürich</p>
             <h3>Spot-On: A Mixed Reality Interface for Multi-Robot Cooperation</h3>
             <p>A mixed reality framework that lets a person direct multiple Boston Dynamics Spot robots through a HoloLens. You look at a drawer, swing door or light switch, pick an action from a floating menu, and the robots carry it out together in the real room.</p>
             <p>In a user study, participants rated the design and usability “good” or “very good” in almost all cases.</p>
-            <p class="badge">Submitted · CV4MR Workshop, CVPR 2025</p>
+            <p class="badge">Published · CV4MR Workshop, CVPR 2025</p>
             <p class="links"><a href="https://arxiv.org/abs/2505.22539" target="_blank" rel="noopener">Paper</a><a href="https://photos.google.com/share/AF1QipOdTeWqNLBI-GcAYUT3ywXGD4rVqE6UBObEha_rrxY-ftb34PGd6Ek_3VBwO-O1vA?key=NE51X2RUOHpnZnJ6UEJOTnNJc1V5LWxIazNtMWFB" target="_blank" rel="noopener">Video</a></p>
           </div>
         </article>
@@ -118,7 +108,7 @@
         <article class="project">
           <div class="media"><img src="assets/projects/holospot.jpg" alt="HoloSpot: a user wearing a HoloLens drags a teddy bear in a miniature hologram of the room, and a Spot robot picks it up, places it and returns" loading="lazy" width="1600" height="841"></div>
           <div class="details">
-            <p class="meta">Sept 2024 — Mar 2025 · ETH Zürich</p>
+            <p class="meta">Sept 2024 — Mar 2025 · CVG, ETH Zürich</p>
             <h3>HoloSpot: Intuitive Object Manipulation via Mixed Reality Drag-and-Drop</h3>
             <p>Remote control of robots for places where people shouldn’t go, such as disaster sites or areas with radiation or toxic chemicals. A scanned room appears in the HoloLens as a miniature “dollhouse” hologram: drag an object to a new spot, and a Boston Dynamics Spot picks it up and places it there in the real room.</p>
             <p>Built in Unity on top of the Spot-Compose framework, with AnyGrasp for grasping and an interactive tutorial for new users. End-to-end pick-and-place tests and a user study confirmed the controls are intuitive.</p>
@@ -129,7 +119,7 @@
         <article class="project">
           <div class="media"><img src="assets/projects/one-to-many.png" alt="Diagram: a keypoint in the query image is matched at once to the keypoints in images 1 to N that observe the same 3D point" loading="lazy" width="1400" height="1175"></div>
           <div class="details">
-            <p class="meta">Mar 2024 — Aug 2024 · Semester Project · ETH Zürich</p>
+            <p class="meta">Mar 2024 — Aug 2024 · Semester Project · Prof. Dr. Marc Pollefeys · CVG, ETH Zürich</p>
             <h3>Multiple to One Matching</h3>
             <p>When a scene has already been reconstructed with Structure from Motion, matching a new query image against every database image one pair at a time wastes work. This project matches the query against many images at once.</p>
             <p>Keypoints from the database images are grouped by the 3D point they observe and aggregated, then matched in a single pass by a network built on LightGlue. This makes matching faster and more accurate for localization and for extending reconstructions, and the method is integrated into the HLoc pipeline.</p>
@@ -137,9 +127,19 @@
         </article>
 
         <article class="project">
+          <div class="media"><img src="assets/projects/interactive-seg.jpg" alt="A street scene with a sign pole selected, and below it the pole segmented out with foreground points sampled along it" loading="lazy" width="1200" height="1613"></div>
+          <div class="details">
+            <p class="meta">Aug 2025 — Dec 2025 · Semester Project · Prof. Dr. Siyu Tang · VLG, ETH Zürich</p>
+            <h3>Interactive 3D Segmentation</h3>
+            <p>Training interactive segmentation models needs accurate ground-truth 3D object masks, but annotating them usually means rounds of positive and negative clicks to fix every boundary, which is slow and tedious.</p>
+            <p>This project removes the back-and-forth: from a single initial click, it produces a high-quality 3D segmentation of the object, building on Segment Anything. Annotation effort drops sharply while segmentation accuracy is preserved.</p>
+          </div>
+        </article>
+
+        <article class="project">
           <div class="media"><img src="assets/projects/stereo.png" alt="Simple stereo geometry: left and right cameras separated by baseline b, both with focal length f, observing point P at image positions u_L and u_R" loading="lazy" width="664" height="454"></div>
           <div class="details">
-            <p class="meta">Mar 2023 — Jul 2023 · Bachelor Thesis · University of Belgrade</p>
+            <p class="meta">Mar 2023 — Jul 2023 · Bachelor Thesis · Prof. Dr. Dragomir El Mezeni · University of Belgrade</p>
             <h3>Stereo Vision Depth Estimation</h3>
             <p>A camera flattens the 3D world into a 2D image and loses depth along the way. This thesis rebuilds stereo depth estimation from first principles: the linear camera model, intrinsic and extrinsic parameters, lens distortion and calibration, then depth from calibrated stereo and from uncalibrated stereo through the fundamental matrix, correspondence search and rectification.</p>
             <p>The second half puts the theory to work in a real-time depth pipeline on an NVIDIA Jetson Nano with a Sony IMX219 stereo camera (60 mm baseline). Built with OpenCV, it calibrates and rectifies the cameras, computes and filters disparity maps, and converts them to depth. CUDA acceleration makes live video processing possible on a 5 W embedded board.</p>
@@ -149,6 +149,26 @@
       </div>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sept 2023 — Present</span>
+          <div>
+            <h3>MSc Electrical Engineering · ETH Zürich</h3>
+            <p>Department of Information Technology and Electrical Engineering (D-ITET), specialization in Signal Processing and Machine Learning.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Oct 2019 — Jul 2023</span>
+          <div>
+            <h3>BSc Electrical Engineering · University of Belgrade</h3>
+            <p>School of Electrical Engineering, Department of Signals and Systems.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
     <section id="experience">
       <h2>Experience</h2>
       <ol class="timeline">
@@ -156,7 +176,7 @@
           <span class="when">Mar 2025 — Present</span>
           <div>
             <h3>Research Assistant · ETH Zürich</h3>
-            <p>Computer Vision and Geometry Lab.</p>
+            <p>Computer Vision and Geometry Lab (CVG).</p>
           </div>
         </li>
         <li>
@@ -167,7 +187,7 @@
           </div>
         </li>
         <li>
-          <span class="when">Sept 2024 — Feb 2026</span>
+          <span class="when">Sept 2024 — Feb 2025</span>
           <div>
             <h3>Teaching Assistant · ETH Zürich</h3>
             <p>Computer Vision (HS24), Computer Vision and Geometry Lab.</p>
@@ -180,31 +200,14 @@
             <p>Object-oriented Programming (HS20) and Microcontroller Systems (HS22).</p>
           </div>
         </li>
+      </ol>
+      <h3 class="subhead">Extracurricular</h3>
+      <ol class="timeline">
         <li>
           <span class="when">Oct 2021 — May 2023</span>
           <div>
             <h3>Team Member · Formula Student Team Road Arrow</h3>
             <p>Vehicle dynamics and powertrain.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ol class="timeline">
-        <li>
-          <span class="when">Sept 2023 — Present</span>
-          <div>
-            <h3>MSc Electrical Engineering · ETH Zürich</h3>
-            <p>Specialization in Signal Processing and Machine Learning.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">Oct 2019 — Jul 2023</span>
-          <div>
-            <h3>BSc Electrical Engineering · University of Belgrade</h3>
-            <p>School of Electrical Engineering, Department of Signals and Systems.</p>
           </div>
         </li>
       </ol>
@@ -224,7 +227,7 @@
         <li><span>Email</span><a href="mailto:petar.lukovic032@gmail.com">petar.lukovic032@gmail.com</a></li>
         <li><span>LinkedIn</span><a data-goatcounter-click="linkedin" href="https://www.linkedin.com/in/petar-lukovic-57b17b335" target="_blank" rel="noopener">petar-lukovic</a></li>
         <li><span>GitHub</span><a data-goatcounter-click="github" href="https://github.com/PetarLukovic" target="_blank" rel="noopener">PetarLukovic</a></li>
-        <li><span>CV</span><a href="assets/Petar_Lukovic_CV.pdf?v=3" data-goatcounter-click="cv-download" target="_blank" rel="noopener">Petar_Lukovic_CV.pdf</a></li>
+        <li><span>CV</span><a href="assets/Petar_Lukovic_CV.pdf?v=4" data-goatcounter-click="cv-download" target="_blank" rel="noopener">Petar_Lukovic_CV.pdf</a></li>
       </ul>
     </section>
   </main>
